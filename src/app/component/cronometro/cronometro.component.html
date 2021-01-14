@@ -1,0 +1,24 @@
+<div class="container mt-3 bg-dark ">
+    <div class="row">
+        <div class="col-12">
+            <h1 class="text-white text-center" > {{cronometro}} </h1>
+        </div>
+    </div>
+    <div class="row p-3">
+        <div class="col-md-4">
+            <button class="btn btn-primary  btn-block " (click)="empezar()" >
+                Empezar
+            </button>
+        </div>
+        <div class="col-md-4">
+            <button class="btn btn-success  btn-block " (click)="pausar()" >
+                Pausar
+            </button>
+        </div>
+        <div class="col-md-4">
+            <button class="btn btn-danger  btn-block "  (click)="finalizar()" >
+                Finalizar
+            </button>
+        </div>
+    </div>
+</div>

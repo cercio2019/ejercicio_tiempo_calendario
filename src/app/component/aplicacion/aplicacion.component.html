@@ -1,0 +1,35 @@
+<div class="container mt-5 ">
+
+    <div class="row">
+        <div class="col-md-6">
+            <form action="">
+                <select  class="form-control" name="app" [(ngModel)]="app"    >
+                    <option value="">Reloj</option>
+                    <option value="cronometro">Cronometro</option>
+                    <option value="regresiva"> Cuenta regresiva</option>
+                </select>
+            </form>
+        </div>
+    </div>
+
+    <div class="row  mt-3 ">
+
+        <div class="col-md-12">
+
+            <div  *ngIf=" app == '' "  >
+                <app-reloj></app-reloj>
+            </div>
+
+            <div  *ngIf=" app == 'cronometro' "  >
+                <app-cronometro></app-cronometro>
+            </div>
+
+            <div  *ngIf=" app == 'regresiva' "  >
+                <app-cuenta-regresiva></app-cuenta-regresiva>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
